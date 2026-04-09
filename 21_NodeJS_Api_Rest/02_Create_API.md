@@ -4,9 +4,9 @@
 ```js
 const express = require('express');
 ```
-La primer parte de exta espresion es la asignacion del framweork de express. La funcion de require nos ayuda a importar dependencias de terceros que nosotros instalemos. 
+La primer parte de esta expresion es la asignacion del framweork de express. La funcion de require nos ayuda a importar dependencias de terceros que nosotros instalemos. 
 
-2. Para inicializar la applicacion de express una vez que hemos impotando la depencia necesitamos ejecutarla. Vamos crear una applicacion aprtir de la ejecucion de express
+2. Para inicializar la applicacion de express una vez que hemos importando la depencia necesitamos ejecutarla. Vamos crear una applicacion aprtir de la ejecucion de express
 ```js
 const express = require('express')
 const app = express()
