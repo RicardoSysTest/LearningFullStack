@@ -1,7 +1,11 @@
 const express = require('express')
+const mongoose = require('mongoose')
 const user = require('./user.handler')
 const app = express()
 const port = 3000
+
+//Credential for DB
+mongoose.connect(`mongodb+srv://ricardo_yepez_user_db:3R4y6on8724@cluster0.0yyrcsp.mongodb.net/?appName=taskmanager`)
 
 //If you recive a request send 200 "OK" and the message "Hello..."
 app.get('/',user.list)

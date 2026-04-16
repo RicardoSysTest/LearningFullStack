@@ -1,9 +1,12 @@
+
+const Users = require('./User') //Import the Users model
 const User={
  get:(req,res)=>{
     res.status(200).send('This a user')
  },
- list:(req,res)=>{
-    res.status(200).send('Hello Users')
+ list:async(req,res)=>{
+    const users = await Users.find()
+    res.status(200).send(users)
  },
  create:(req,res)=>{
     res.status(201).send('Create User')
