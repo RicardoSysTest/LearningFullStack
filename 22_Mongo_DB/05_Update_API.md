@@ -98,6 +98,7 @@ To test this change we need to execute `node api.js` and from there we will see 
 ![alt text](img/postman_call_get.png)
 And whit this method we will see the content of our model: 
 ![alt text](img/postman_body_get_result.png)
+
 6. Cuando tenemos una peticion de tipo `POST` normalmente las peticiones se regresan del body `req.body` from:
 ```js
  create:(req,res)=>{
